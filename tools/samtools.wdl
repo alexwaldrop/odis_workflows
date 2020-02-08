@@ -162,3 +162,42 @@ task Samtools_merge{
     }
 }
 
+
+task Samtools_faidx{
+    File fasta
+    String output_basename = basename(fasta)
+
+    # Runtime environment
+    String docker = "rticode/samtools:1.9"
+    Int cpu = 2
+    Int mem_gb = 8
+    Int max_retries = 3
+
+    meta {
+        description: "Samtools_merge task merges 2 or more sorted bams into single sorted output bam"
+    }
+
+    parameter_meta {
+        bam: "Input bam file"
+        bam_index: "Input bam index file"
+        docker: "(optional) the docker image containing the runtime environment for this task"
+        mem_gb: "(optional) the amount of memory (GB) to provision for this task"
+        cpu: "(optional) the number of cpus to provision for this task"
+    }
+
+    command <<<
+        samtools faidx ${fasta}
+    >>>
+
+    runtime {
+        docker: docker
+        cpu: cpu
+        memory: "${mem_gb} GB"
+        maxRetries: max_retries
+    }
+
+    output{
+        File fasta_index = "${fasta}.fai"
+    }
+}
+
