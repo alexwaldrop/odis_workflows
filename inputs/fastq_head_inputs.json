@@ -1,0 +1,7 @@
+{
+  "fastq_head_wf.fastqs": [
+   "s3://odis-analysis/ddrad_data/raw_reads/ODIS_1_NoIndex_L001_R1_001.fastq.gz",
+   "s3://odis-analysis/ddrad_data/raw_reads/ODIS_2_NoIndex_L002_R1_001.fastq.gz"
+ ],
+  "fastq_head_wf.n": 100000
+}
