@@ -1,0 +1,2 @@
+pyfastx==0.6.5
+biopython==1.76
