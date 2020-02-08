@@ -22,24 +22,24 @@ workflow build_references_wf{
     # Create fasta index of genome reference
     call SAM.Samtools_faidx as make_ref_index{
         input:
-            fasta = select_first(merge_ref.merged_ref, ref_fasta)
+            fasta = select_first([merge_ref.merged_fasta, ref_fasta])
     }
 
     # Create sequence dictionary of genome reference for GATK tools
     call PIC.create_sequence_dictionary as make_ref_dict{
         input:
-            fasta = select_first(merge_ref.merged_ref, ref_fasta)
+            fasta = select_first([merge_ref.merged_fasta, ref_fasta])
     }
 
     # Create BWA alignment index according to GATK best practices (bwtsw mode)
     call BWA.bwa_index{
         input:
-            fasta = select_first(merge_ref.merged_ref, ref_fasta),
+            fasta = select_first([merge_ref.merged_fasta, ref_fasta]),
             use_bwtsw = true
     }
 
     output{
-        File? merged_ref = merge_ref.merged_ref
+        File final_ref = select_first([merge_ref.merged_fasta, ref_fasta])
         Array[File] bwa_index_files = bwa_index.bwa_index_files
         File ref_index = make_ref_index.fasta_index
         File ref_dict  = make_ref_dict.fasta_dict

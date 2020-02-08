@@ -68,7 +68,7 @@ task bwa_index{
     }
 
     output{
-        Array[File] bwa_index_files = glob("${output_basename}.*")
+        Array[File] bwa_index_files = glob("${ref_basename}.*")
     }
 }
 
