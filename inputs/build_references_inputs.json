@@ -1,0 +1,7 @@
+{
+  "build_references_wf.ref_fasta": "s3://odis-analysis/ddrad_data/assembly/genome.ctg.fasta",
+  "build_references_wf.max_ref_contigs": 35,
+  "build_references_wf.ref_output_basename": "odis.draft_assembly.v1.35ctg",
+  "build_references_wf.do_contig_merge": true
+}
+
