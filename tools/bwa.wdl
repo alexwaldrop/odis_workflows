@@ -15,7 +15,7 @@ task bwa_mem_se{
 
     # Runtime environment
     String docker = "davelabhub/bwa_samtools:20190123"
-    Int cpu = 16
+    Int cpu = 12
     Int mem_gb = ceil(cpu*3)
     Int max_retries = 3
 
