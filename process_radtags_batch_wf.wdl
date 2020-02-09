@@ -50,15 +50,18 @@ workflow process_radtags_batch_wf{
     }
 
     scatter(demux_fastq in process_radtags.demuxed_fastqs){
-        call FASTQC.FastQC{
-            input:
-                fastq = demux_fastq
+        # Had to include step because negative control files sometimes come back with no reads and fastqc fails
+        if(size(demux_fastq, "B") > 100){
+            call FASTQC.FastQC{
+                input:
+                    fastq = demux_fastq
+            }
         }
     }
 
     call ZIP.collect_large_file_list_wf as gather_fastqc{
         input:
-            input_files = FastQC.zip_report,
+            input_files = select_all(FastQC.zip_report),
             output_dir_name  = "${batch_id}_fastqc"
     }
 
