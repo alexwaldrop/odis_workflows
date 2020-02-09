@@ -49,7 +49,7 @@ task process_radtags_se{
             --adapter-1 "${adapter_seq}" \
             --adapter-mm ${adapter_mismatches} \
             --renz-1 ${enzyme_1} \
-            ${true='-E pred33' false='-E phred64' is_phred_33} \
+            ${true='-E phred33' false='-E phred64' is_phred_33} \
             ${'-w ' + sliding_window_frac} \
             ${'-s ' + sliding_window_score_limit} \
             ${'-y ' + output_type} \
