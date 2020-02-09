@@ -104,7 +104,7 @@ workflow HaplotypeCallerGvcf_GATK4 {
       input:
         input_bam = input_bam,
         input_bam_index = input_bam_index,
-        interval_list = chr,
+        interval = chr,
         output_filename = "${output_basename}.${chr}.g.vcf.gz",
         ref_dict = ref_dict,
         ref_fasta = ref_fasta,
@@ -118,8 +118,8 @@ workflow HaplotypeCallerGvcf_GATK4 {
   # Merge per-interval GVCFs
   call MergeGVCFs {
     input:
-      input_vcfs = HaplotypeCaller.output_vcf,
-      input_vcfs_indexes = HaplotypeCaller.output_vcf_index,
+      input_vcfs = HaplotypeCaller.output_gvcf,
+      input_vcfs_indexes = HaplotypeCaller.output_gvcf_index,
       output_filename = "${output_basename}.merged.g.vcf.gz",
       docker = gatk_docker,
       gatk_path = gatk_path

@@ -19,7 +19,7 @@ workflow fastq_to_gvcf_wf{
     # Make read group for bam
     String rg_pu
     String rg_pl
-    String rg = "@RG	ID:${sample_name}	PU:${rg_pu}	SM:${sample_name}	LB:${batch_id}	PL:${rg_pl}"
+    String rg = "@RG\tID:${sample_name}\tPU:${rg_pu}\tSM:${sample_name}\tLB:${batch_id}\tPL:${rg_pl}"
 
     File ref_fasta
     File ref_fasta_idx
@@ -39,7 +39,7 @@ workflow fastq_to_gvcf_wf{
     }
 
     # BWA align
-    call BWA.bwa_mem{
+    call BWA.bwa_mem_se{
         input:
             fastq = headcrop.trimmed_fastq,
             rg = rg,
@@ -54,8 +54,8 @@ workflow fastq_to_gvcf_wf{
     # Mark duplicates
     call PICARD.mark_duplicates{
         input:
-            bam = bwa_mem.bam,
-            bam_index = bwa_mem.bam_index,
+            input_bam = bwa_mem_se.bam,
+            input_bam_index = bwa_mem_se.bam_index,
             output_basename = sample_name,
             assume_sorted = true,
             remove_duplicates = false

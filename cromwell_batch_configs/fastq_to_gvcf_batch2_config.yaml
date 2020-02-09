@@ -3,8 +3,8 @@ input_template:
 
     "## Sample attributes": "",
     "fastq_to_gvcf_wf.sample_name": "",
-    "fastq_to_gvcf_wf.batch_id": "<<<IMPORT_WF_INPUT>>> process_radtags_batch_wf.batch_id",
-    "fastq_to_gvcf_wf.fastq": "<<<IMPORT_WF_OUTPUT>>> process_radtags_batch_wf.demux_fastqs",
+    "fastq_to_gvcf_wf.batch_id": "plate_2",
+    "fastq_to_gvcf_wf.fastq": "",
     "fastq_to_gvcf_wf.ref_fasta": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.fasta",
     "fastq_to_gvcf_wf.ref_fasta_idx": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.fasta.fai",
     "fastq_to_gvcf_wf.ref_fasta_dict": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.dict",

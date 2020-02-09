@@ -25,8 +25,8 @@ task create_sequence_dictionary{
 }
 
 task mark_duplicates{
-    File bam
-    File bam_index
+    File input_bam
+    File input_bam_index
     Boolean assume_sorted
     Boolean remove_duplicates
     String validation_stringency = "LENIENT"
@@ -41,7 +41,7 @@ task mark_duplicates{
     command <<<
         # Mark duplicates
         java -jar /usr/picard/picard.jar MarkDuplicates \
-            INPUT=${bam} \
+            INPUT=${input_bam} \
             OUTPUT=${output_basename}.mrkdup.bam \
             METRICS_FILE=${output_basename}.mrkdup_report.txt \
             ASSUME_SORTED=${true="TRUE" false="FALSE" assume_sorted} \
@@ -61,7 +61,7 @@ task mark_duplicates{
 
     output{
         File bam = "${output_basename}.mrkdup.bam"
-        File bam = "${output_basename}.mrkdup.bam.bai"
+        File bam_index = "${output_basename}.mrkdup.bam.bai"
         File mrkdup_report = "${output_basename}.mrkdup_report.txt"
     }
 }
