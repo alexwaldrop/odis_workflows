@@ -1,0 +1,16 @@
+[
+  {
+ "cromwell-batch-label": "odis_process_radtags",
+ "cromwell-sample-label": "plate_1",
+ "cromwell-batch-sample-label": "odis_process_radtags_plate_1",
+ "cromwell-batch-status": "include",
+ "cromwell-unique-label": "process_radtags_batch_wf_odis_process_radtags_plate_1_04a5947"
+  },
+  {
+ "cromwell-batch-label": "odis_process_radtags",
+ "cromwell-sample-label": "plate_2",
+ "cromwell-batch-sample-label": "odis_process_radtags_plate_2",
+ "cromwell-batch-status": "include",
+ "cromwell-unique-label": "process_radtags_batch_wf_odis_process_radtags_plate_2_04a5947"
+  }
+]
