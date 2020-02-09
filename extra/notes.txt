@@ -1,0 +1,16 @@
+>Illumia_SE_Adapter_2 (detected in fastq)
+CAAGCAGAAGACGGCATACGAGCTCTTCCGATCT
+
+> Illumina_SE_Adapter_2_RC (the actual seqeuence contained in the reads)
+AGATCGGAAGAGCTCGTATGCCGTCTTCTGCTTG
+
+# Command for converting the barcode csv files to stacks-compatible barcode files
+    * Replace commas with tabs
+    * Remove header
+    * Add 'sample_' to beginning of sample names because they're numbers and that could cause issues
+    * Switch column order so barcode appears first
+
+cat barcodes_plate1.final.csv | \
+    tr ',' '\t' | \
+    tail -n +2 | \
+    awk 'BEGIN{FS="\t"; OFS="\t"} {$1="sample_"$1; print}' > stacks_barcodes_plate1.final.tsv
