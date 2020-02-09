@@ -3,6 +3,8 @@ task bwa_mem_se{
     String rg
 
     # BWA index files
+    File ref_fasta
+    File ref_fasta_idx
     File amb
     File ann
     File bwt
@@ -15,7 +17,7 @@ task bwa_mem_se{
 
     # Runtime environment
     String docker = "davelabhub/bwa_samtools:20190123"
-    Int cpu = 12
+    Int cpu = 4
     Int mem_gb = ceil(cpu*3)
     Int max_retries = 3
 
@@ -23,7 +25,7 @@ task bwa_mem_se{
         # Align, convert to bam, and sort
         bwa mem -M -R "${rg}" \
             -t ${cpu} \
-            ${bwa_index_name} \
+            ${ref_fasta} \
             ${fastq} | samtools view -uS -@ ${cpu} - | samtools sort -@ ${cpu} - -o ${output_filename}
 
         # Index sorted output bam

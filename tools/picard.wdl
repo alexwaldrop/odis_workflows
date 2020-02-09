@@ -34,8 +34,8 @@ task mark_duplicates{
 
     # Runtime environment
     String docker = "broadinstitute/picard:latest"
-    Int cpu = 4
-    Int mem_gb = 8
+    Int cpu = 1
+    Int mem_gb = 5
     Int max_retries = 3
 
     command <<<
@@ -45,11 +45,12 @@ task mark_duplicates{
             OUTPUT=${output_basename}.mrkdup.bam \
             METRICS_FILE=${output_basename}.mrkdup_report.txt \
             ASSUME_SORTED=${true="TRUE" false="FALSE" assume_sorted} \
-            REMOVE_DUPLICATES=${true="TRUE" false="FALSE" remove_duplicates} \
-            VALIDATION_STRINGENCY=${validation_stringency}
+            REMOVE_DUPLICATES=${true="TRUE" false="FALSE" remove_duplicates}
 
         # Re-build bam index
-        java -jar /usr/picard/picard.jar BuildBamIndex INPUT=${output_basename}.mrkdup.bam
+        java -jar /usr/picard/picard.jar BuildBamIndex \
+            INPUT=${output_basename}.mrkdup.bam \
+            OUTPUT=${output_basename}.mrkdup.bam.bai
     >>>
 
     runtime {

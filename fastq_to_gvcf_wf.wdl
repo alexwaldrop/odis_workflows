@@ -19,7 +19,7 @@ workflow fastq_to_gvcf_wf{
     # Make read group for bam
     String rg_pu
     String rg_pl
-    String rg = "@RG\tID:${sample_name}\tPU:${rg_pu}\tSM:${sample_name}\tLB:${batch_id}\tPL:${rg_pl}"
+    String rg = "@RG\\tID:${sample_name}\\tPU:${rg_pu}\\tSM:${sample_name}\\tLB:${batch_id}\\tPL:${rg_pl}"
 
     File ref_fasta
     File ref_fasta_idx
@@ -43,6 +43,8 @@ workflow fastq_to_gvcf_wf{
         input:
             fastq = headcrop.trimmed_fastq,
             rg = rg,
+            ref_fasta = ref_fasta,
+            ref_fasta_idx = ref_fasta_idx,
             amb = ref_bwa_amb,
             ann = ref_bwa_ann,
             bwt = ref_bwa_bwt,
