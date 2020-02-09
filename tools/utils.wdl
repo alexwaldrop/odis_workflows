@@ -77,3 +77,28 @@ task slice{
         Array[String] outputs = read_lines(stdout())
     }
 }
+
+task get_chrs_from_faidx{
+
+    File ref_fasta_idx
+
+    # Runtime environment
+    String docker = "ubuntu:18.04"
+    Int cpu = 1
+    Int mem_gb = 1
+
+    command<<<
+        cut -f 1 ${ref_fasta_idx}
+    >>>
+
+    runtime {
+        docker: docker
+        cpu: cpu
+        memory: "${mem_gb} GB"
+    }
+
+    output{
+        Array[String] chrs = read_lines(stdout())
+    }
+}
+
