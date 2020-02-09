@@ -201,3 +201,29 @@ task Samtools_faidx{
     }
 }
 
+task Samtools_flagstat{
+    File bam
+    File bam_index
+    String output_basename = basename(bam,".bam")
+
+    # Runtime environment
+    String docker = "rticode/samtools:1.9"
+    Int cpu = 2
+    Int mem_gb = 4
+    Int max_retries = 3
+
+    command <<<
+        samtools flagstat ${bam} > ${output_basename}.flagstat.txt
+    >>>
+
+    runtime {
+        docker: docker
+        cpu: cpu
+        memory: "${mem_gb} GB"
+        maxRetries: max_retries
+    }
+
+    output{
+        File flagstat_log = "${output_basename}.flagstat.txt"
+    }
+}
