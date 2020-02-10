@@ -14,7 +14,8 @@ input_template:
     "fastq_to_gvcf_wf.ref_bwa_pac": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.fasta.pac",
     "fastq_to_gvcf_wf.ref_bwa_sa": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.fasta.sa",
     "fastq_to_gvcf_wf.rg_pu": "HWI-ST425:218:HH3WVADXX:1",
-    "fastq_to_gvcf_wf.rg_pl": "Illumina"
+    "fastq_to_gvcf_wf.rg_pl": "Illumina",
+    "fastq_to_gvcf_wf.headcrop_len": 2
 
   }'
 

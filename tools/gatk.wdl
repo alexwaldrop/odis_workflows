@@ -15,6 +15,7 @@ task HaplotypeCaller {
     String docker
     Int mem_gb = 8
     Int cpu = 1
+    Int max_retries = 3
 
     String java_opt = select_first([java_options, "-XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10"])
     Int command_mem_gb = mem_gb - 1
@@ -36,6 +37,7 @@ task HaplotypeCaller {
     cpu: cpu
     docker: docker
     memory: mem_gb + " GB"
+    maxRetries: max_retries
   }
 
   output {
@@ -59,6 +61,7 @@ task MergeGVCFs {
     Int cpu = 1
     Int mem_gb = 3
     Int command_mem_gb = mem_gb - 1
+    Int max_retries = 3
 
   command {
   set -e
@@ -73,6 +76,7 @@ task MergeGVCFs {
     docker: docker
     cpu: cpu
     memory: mem_gb + " GB"
+    maxRetries: max_retries
   }
 
   output {
