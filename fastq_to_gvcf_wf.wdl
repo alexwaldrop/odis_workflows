@@ -53,21 +53,12 @@ workflow fastq_to_gvcf_wf{
             output_basename = sample_name
     }
 
-    # Mark duplicates
-    call PICARD.mark_duplicates{
-        input:
-            input_bam = bwa_mem_se.bam,
-            input_bam_index = bwa_mem_se.bam_index,
-            output_basename = sample_name,
-            assume_sorted = true,
-            remove_duplicates = false
-    }
 
     # Flagstat bam
     call SAM.Samtools_flagstat as flagstat{
         input:
-            bam = mark_duplicates.bam,
-            bam_index = mark_duplicates.bam_index
+            bam = bwa_mem_se.bam,
+            bam_index = bwa_mem_se.bam_index
     }
 
     # Get names of chromosomes for passing to haplotype caller
@@ -79,8 +70,8 @@ workflow fastq_to_gvcf_wf{
     # Scatter Haplotype caller across chromosomes
     call GATK.HaplotypeCallerGvcf_GATK4 as hap_caller{
         input:
-            input_bam = mark_duplicates.bam,
-            input_bam_index = mark_duplicates.bam_index,
+            input_bam = bwa_mem_se.bam,
+            input_bam_index = bwa_mem_se.bam_index,
             ref_dict = ref_fasta_dict,
             ref_fasta = ref_fasta,
             ref_fasta_index = ref_fasta_idx,
@@ -90,8 +81,7 @@ workflow fastq_to_gvcf_wf{
 
     call MULTIQC.Collect_qc_files as gather_qc{
         input:
-            input_files = [mark_duplicates.mrkdup_report,
-                           flagstat.flagstat_log],
+            input_files = [flagstat.flagstat_log],
             output_dir_name  = "${batch_id}_fastqc"
     }
 
@@ -105,8 +95,8 @@ workflow fastq_to_gvcf_wf{
     }
 
     output{
-        File final_bam = mark_duplicates.bam
-        File final_bam_index = mark_duplicates.bam_index
+        File final_bam = bwa_mem_se.bam
+        File final_bam_index = bwa_mem_se.bam_index
         File gvcf = hap_caller.output_vcf
         File gvcf_index = hap_caller.output_vcf_index
         File multiqc_input_dir = gather_qc.output_dir
