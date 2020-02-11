@@ -158,6 +158,58 @@ task GatherVcfs {
   }
 }
 
+task merge_lots_of_bams{
+    File input_bams_dir
+    String bam_dir_basename = basename(input_bams_dir, ".tar.gz")
+    String output_basename
+    String output_filename = "${output_basename}.merged.bam"
+
+    # Runtime environment
+    String docker = "rticode/samtools:1.9"
+    Int cpu = 8
+    Int mem_gb = ceil(cpu*4) + 4
+    Int max_retries = 3
+
+    meta {
+        description: "Samtools_merge task merges 2 or more sorted bams into single sorted output bam"
+    }
+
+    parameter_meta {
+        bam: "Input bam file"
+        bam_index: "Input bam index file"
+        docker: "(optional) the docker image containing the runtime environment for this task"
+        mem_gb: "(optional) the amount of memory (GB) to provision for this task"
+        cpu: "(optional) the number of cpus to provision for this task"
+    }
+
+    command <<<
+
+        tar -xzvf ${input_bams_dir} -C ./
+
+        # merge alignments
+        samtools merge \
+            -f -c \
+            -@ ${cpu} \
+            ${output_filename} \
+            ${bam_dir_basename}/*.bam
+
+        # Index output bam
+        samtools index ${output_filename}
+
+    >>>
+
+    runtime {
+        docker: docker
+        cpu: cpu
+        memory: "${mem_gb} GB"
+        maxRetries: max_retries
+    }
+
+    output{
+        File bam = output_filename
+        File bam_index = "${output_filename}.bai"
+    }
+}
 
 workflow JointGenotyping {
 
@@ -165,6 +217,8 @@ workflow JointGenotyping {
     Array[String] sample_names
     Array[File] gvcfs
     Array[File] gvcf_indexes
+    Array[File] bams
+    Array[File] bam_indexes
 
     File ref_fasta
     File ref_fasta_idx
@@ -203,6 +257,25 @@ workflow JointGenotyping {
             input_files = [zip_gvcfs.output_dir, zip_gvcf_indexes.output_dir]
     }
 
+
+    call ZIP.collect_large_file_list_wf as zip_bams{
+        input:
+            output_dir_name = analysis_name + "_bams",
+            input_files = bams
+    }
+
+    call ZIP.collect_large_file_list_wf as zip_bam_indexes{
+        input:
+            output_dir_name = analysis_name + "_bams",
+            input_files = bam_indexes
+    }
+
+    call ZIP.collect_chunks as zip_bams_with_index{
+        input:
+            output_dir_name = analysis_name + "_bams",
+            input_files = [zip_bams.output_dir, zip_bam_indexes.output_dir]
+    }
+
     scatter (chr in get_ref_chrs.chrs) {
         call ImportGVCFs {
             input:
@@ -235,9 +308,17 @@ workflow JointGenotyping {
             output_vcf_name = analysis_name + ".merged.vcf.gz",
     }
 
+    call merge_lots_of_bams as merge_bam{
+        input:
+            input_bams_dir = zip_bams_with_index.output_dir,
+            output_basename = analysis_name + ".all_samples"
+    }
+
     output{
         File output_vcf = GatherVcfs.output_vcf
         File output_vcf_index = GatherVcfs.output_vcf_index
+        File merged_bam = merge_bam.bam
+        File merged_bam_index = merge_bam.bam_index
     }
 }
 
