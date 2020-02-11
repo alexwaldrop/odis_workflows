@@ -1,10 +1,11 @@
 import "odis_workflows/tools/utils.wdl" as UTILS
+import "odis_workflows/tools/samtools.wdl" as SAM
 import "odis_workflows/helper_workflows/collect_large_file_list_wf.wdl" as ZIP
 
 task ImportGVCFs {
 
     File gvcfs_zip
-    File interval
+    String interval
     File ref_fasta
     File ref_fasta_index
     File ref_dict
@@ -17,7 +18,7 @@ task ImportGVCFs {
     String gatk_docker = "us.gcr.io/broad-gotc-prod/gatk-nightly:2019-05-07-4.1.2.0-5-g53d015e4f-NIGHTLY-SNAPSHOT"
     Int cpu = 4
     Int mem_gb = 26
-    Int max_retries = 3
+    Int max_retries = 1
 
   command <<<
     set -euo pipefail
@@ -28,7 +29,11 @@ task ImportGVCFs {
     tar -xzvf ${gvcfs_zip} -C ./
 
     # Create arg file
-    ls ${gvcfs_dir}/*.g.vcf* | awk 'BEGIN{FS="\t"; OFS="\t"} {$1="-V ${gvcfs_dir}/"$1; print}' > argfile.txt
+    ls ${gvcfs_dir}/*.g.vcf.gz | awk 'BEGIN{FS="\t"; OFS="\t"} {$1="-V "$1; print}' > argfile.txt
+
+    echo $(pwd)
+
+    ls -l
 
     # We've seen some GenomicsDB performance regressions related to intervals, so we're going to pretend we only have a single interval
     # using the --merge-input-intervals arg
@@ -67,7 +72,7 @@ task ImportGVCFs {
 
 task GenotypeGVCFs {
     File workspace_tar
-    File interval
+    String interval
 
     String output_vcf_filename
 
@@ -159,6 +164,7 @@ workflow JointGenotyping {
     String analysis_name = "odis_ddrad"
     Array[String] sample_names
     Array[File] gvcfs
+    Array[File] gvcf_indexes
 
     File ref_fasta
     File ref_fasta_idx
@@ -179,17 +185,28 @@ workflow JointGenotyping {
             ref_fasta_idx = ref_fasta_idx
     }
 
-    # Collect all QC files into tarball for MultiQC input
     call ZIP.collect_large_file_list_wf as zip_gvcfs{
         input:
             output_dir_name = analysis_name + "_gvcfs",
             input_files = gvcfs
     }
 
+    call ZIP.collect_large_file_list_wf as zip_gvcf_indexes{
+        input:
+            output_dir_name = analysis_name + "_gvcfs",
+            input_files = gvcf_indexes
+    }
+
+    call ZIP.collect_chunks as zip_gvcfs_with_index{
+        input:
+            output_dir_name = analysis_name + "_gvcfs",
+            input_files = [zip_gvcfs.output_dir, zip_gvcf_indexes.output_dir]
+    }
+
     scatter (chr in get_ref_chrs.chrs) {
         call ImportGVCFs {
             input:
-                gvcfs_zip = zip_gvcfs.output_dir,
+                gvcfs_zip = zip_gvcfs_with_index.output_dir,
                 interval = chr,
                 ref_fasta = ref_fasta,
                 ref_fasta_index = ref_fasta_idx,

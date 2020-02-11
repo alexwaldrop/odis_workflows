@@ -4,6 +4,7 @@ input_template:
     "JointGenotyping.analysis_name": "odis_ddrad",
     "JointGenotyping.sample_names": "<<<IMPORT_WF_INPUT>>> fastq_to_gvcf_wf.sample_name",
     "JointGenotyping.gvcfs": "<<<IMPORT_WF_OUTPUT>>> fastq_to_gvcf_wf.gvcf",
+    "JointGenotyping.gvcf_indexes": "<<<IMPORT_WF_OUTPUT>>> fastq_to_gvcf_wf.gvcf_index",
     "JointGenotyping.ref_fasta": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.fasta",
     "JointGenotyping.ref_fasta_idx": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.fasta.fai",
     "JointGenotyping.ref_fasta_dict": "s3://odis-refs/odis-draft-assembly-v1-35ctgs/odis.draft_assembly.v1.35ctg.dict"
