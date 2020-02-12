@@ -13,8 +13,6 @@ workflow fastq_to_gvcf_wf{
     String sample_name
     String batch_id
     File fastq
-    Int headcrop_len
-    Boolean is_phred_33 = true
 
     # Make read group for bam
     String rg_pu
@@ -30,18 +28,10 @@ workflow fastq_to_gvcf_wf{
     File ref_bwa_pac
     File ref_bwa_sa
 
-    # Headrop
-    call TRIM.headcrop{
-        input:
-            fastq = fastq,
-            crop_len = headcrop_len,
-            output_basename = sample_name
-    }
-
     # BWA align
     call BWA.bwa_mem_se{
         input:
-            fastq = headcrop.trimmed_fastq,
+            fastq = fastq,
             rg = rg,
             ref_fasta = ref_fasta,
             ref_fasta_idx = ref_fasta_idx,
