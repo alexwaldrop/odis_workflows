@@ -102,3 +102,27 @@ task get_chrs_from_faidx{
     }
 }
 
+task flatten_string_array {
+
+    Array[Array[String]] array
+
+    # Runtime environment
+    String docker = "ubuntu:18.04"
+    Int cpu = 1
+    Int mem_gb = 1
+
+    command {
+    for line in $(echo ${sep=', ' array}) ; \
+    do echo $line | tr -d '"[],' ; done
+    }
+
+    runtime {
+        docker: docker
+        cpu: cpu
+        memory: "${mem_gb} GB"
+    }
+
+    output {
+        Array[String]  flat_array = read_lines(stdout())
+    }
+}
