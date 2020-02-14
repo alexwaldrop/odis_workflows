@@ -1,0 +1,7 @@
+{
+  "build_references_wf.ref_fasta": "s3://odis-refs/onthophagus-taurus-v2/GCF_000648695.1_Otau_2.0_genomic.fna.gz",
+  "build_references_wf.max_ref_contigs": 35,
+  "build_references_wf.ref_output_basename": "otau.assembly.v2.35ctg",
+  "build_references_wf.do_contig_merge": true
+}
+
