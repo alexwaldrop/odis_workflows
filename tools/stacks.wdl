@@ -76,3 +76,59 @@ task process_radtags_se{
         File discard_fastq = "stacks_output/${fastq_basename}.discards"
     }
 }
+
+task denovo_map{
+
+    File input_fastq_zip
+    File popmap_file
+    Boolean? paired_end
+    Boolean? remove_pcr_dups
+    String? additional_options
+    Int? mismatch_within_individuals
+    Int? mismatch_between_individuals
+    Float? var_alpha
+    Float? gt_alpha
+    Int? min_samples_per_pop
+    Int? min_pops
+
+    String input_fastq_dir = basename(input_fastq_zip, ".tar.gz")
+
+    # Runtime environment
+    String docker = "alexwaldrop/stacks:2.5"
+    Int cpu = 48
+    Int mem_gb = 72
+    Int max_retries = 3
+
+    command <<<
+        # Make output directory
+        mkdir stacks_output
+
+        tar xzvf ${input_fastq_zip} -C .
+
+        # Run denovo_map
+        denovo_map.pl --samples ${input_fastq_dir} \
+            --popmap ${popmap_file} \
+            -o stacks_output \
+            -T ${cpu} \
+            ${true='--paired' false='' paired_end} \
+            ${true='--rm-pcr-duplicates' false='' remove_pcr_dups} \
+            ${'-X "' + additional_options + '"'} \
+            ${'-M ' + mismatch_within_individuals} \
+            ${'-n ' + mismatch_between_individuals} \
+            ${'--var-alpha ' + var_alpha} \
+            ${'--gt-alpha ' + gt_alpha} \
+            ${'-r ' + min_samples_per_pop} \
+            ${'-p ' + min_pops}
+    >>>
+
+    runtime {
+        docker: docker
+        cpu: cpu
+        memory: "${mem_gb} GB"
+        maxRetries: max_retries
+    }
+
+    output{
+        Array[File] stacks_output = glob("stacks_output/*")
+    }
+}
