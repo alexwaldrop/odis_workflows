@@ -30,6 +30,6 @@ task merge_ref_contigs{
 
     output{
         File merged_fasta = "${output_basename}.fasta"
-        File liftover_bed = "${output_basename}.fasta.bed"
+        File liftover_bed = "${output_basename}.fasta.liftover.bed"
     }
 }
