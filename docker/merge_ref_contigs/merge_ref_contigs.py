@@ -107,19 +107,24 @@ def get_argparser():
     return argparser_obj
 
 
-def merge_contigs(fasta, num_contigs, min_contig_size, output_file, spacer_len=150):
+def merge_contigs(fasta, num_contigs, min_contig_size, output_file, bed_output_file, spacer_len=150):
     seqs = []
     spacer = 'N' * spacer_len
     length = 0
     merged_contig_num = 1
     out_fh = open(output_file, "w")
+    bed_out_fh = open(bed_output_file, "w")
+    bed_out_fh.write("chrom\tchromStart\tchromEnd\torigContig\n")
+    contig_pos = 0
     for seq in fasta:
+        seq_name = seq.name
         seq = seq.seq
         length += len(seq)
         if length < min_contig_size or merged_contig_num >= num_contigs:
             # Keep adding to current merged contig until max length reached
             # OR this is the last merged contig (last merged contig can exceed max size to make sure you have the right number of chroms)
             seqs.append(str(seq))
+
         else:
             # Create new merged contig from sequences if current merged contig is long enough
             logging.info("Writing merged contig {0}...".format(merged_contig_num))
@@ -135,6 +140,14 @@ def merge_contigs(fasta, num_contigs, min_contig_size, output_file, spacer_len=1
             length = len(seq)
             seqs.append(str(seq))
             merged_contig_num += 1
+            contig_pos = 0
+
+        # Write bed record and update current contig position
+        bed_out_fh.write("{0}\t{1}\t{2}\t{3}\n".format("merged_contig_{0}".format(merged_contig_num),
+                                                       contig_pos,
+                                                       contig_pos + len(seq),
+                                                       seq_name,))
+        contig_pos = contig_pos + len(seq) + spacer_len
 
     # Join and output remaining contigs
     if seqs:
@@ -144,8 +157,9 @@ def merge_contigs(fasta, num_contigs, min_contig_size, output_file, spacer_len=1
                                   description="")
         out_fh.write("{0}".format(merged_contig.format("fasta")))
 
-    # Close output file
+    # Close output files
     out_fh.close()
+    bed_out_fh.close()
 
 
 def main():
@@ -160,6 +174,7 @@ def main():
     num_contigs = args.num_contigs
     spacer_len = args.spacer_len
     out_fasta = args.out_fasta
+    out_bed = "{0}.liftover.bed".format(out_fasta)
 
     # Configure logging appropriate for verbosity
     configure_logging(args.verbosity_level)
@@ -177,7 +192,7 @@ def main():
 
     # Merge contigs
     logging.info("Merging contigs")
-    merge_contigs(fa, num_contigs, min_contig_size, out_fasta, spacer_len)
+    merge_contigs(fa, num_contigs, min_contig_size, out_fasta, out_bed, spacer_len)
 
     # Remove previous indices if they exist
     if os.path.exists("{0}.fxi".format(out_fasta)):
