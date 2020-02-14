@@ -40,6 +40,7 @@ workflow build_references_wf{
 
     output{
         File final_ref = select_first([merge_ref.merged_fasta, ref_fasta])
+        File? liftover_bed = merge_ref.liftover_bed
         Array[File] bwa_index_files = bwa_index.bwa_index_files
         File ref_index = make_ref_index.fasta_index
         File ref_dict  = make_ref_dict.fasta_dict
