@@ -1,0 +1,7 @@
+{
+ "cromwell-batch-label": "odis_genotype_gvcfs_take3",
+ "cromwell-sample-label": "odis_genotype_gvcfs_take3",
+ "cromwell-batch-sample-label": "odis_genotype_gvcfs_take3_odis_genotype_gvcfs_take3",
+ "cromwell-batch-status": "include",
+ "cromwell-unique-label": "JointGenotyping_odis_genotype_gvcfs_take3_odis_genotype_gvcfs_take3_0cf5a87"
+}

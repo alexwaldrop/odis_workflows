@@ -1,0 +1,1318 @@
+[
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_1",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_1",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_1_7de1953"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_10",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_10",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_10_7de3bd3"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_100",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_100",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_100_7de3bf1"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_101",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_101",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_101_7de3bf8"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_102",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_102",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_102_7de3bff"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_103",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_103",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_103_7de3c05"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_104",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_104",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_104_7de3c0b"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_106",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_106",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_106_7de3c11"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_107",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_107",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_107_7de3c18"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_108",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_108",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_108_7de3c1e"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_109",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_109",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_109_7de3c23"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_110",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_110",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_110_7de3c28"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_112",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_112",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_112_7de3c2d"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_113",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_113",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_113_7de3c34"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_114",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_114",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_114_7de3c39"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_115",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_115",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_115_7de3c40"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_116",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_116",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_116_7de3c45"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_117",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_117",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_117_7de3c4a"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_118",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_118",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_118_7de3c4f"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_12",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_12",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_12_7de3c54"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_14",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_14",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_14_7de3c59"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_16",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_16",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_16_7de3c5f"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_17",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_17",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_17_7de3c64"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_18",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_18",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_18_7de3c69"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_19",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_19",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_19_7de3c6e"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_2",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_2",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_2_7de3c73"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_21",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_21",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_21_7de3c79"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_22",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_22",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_22_7de3c7f"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_24",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_24",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_24_7de3c84"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_25",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_25",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_25_7de3c89"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_27",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_27",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_27_7de3c8d"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_28",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_28",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_28_7de3c92"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_29",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_29",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_29_7de3c98"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_3",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_3",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_3_7de3c9c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_30",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_30",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_30_7de3ca2"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_31",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_31",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_31_7de3ca7"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_32",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_32",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_32_7de3caf"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_34",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_34",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_34_7de3cb4"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_35",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_35",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_35_7de3cbb"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_36",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_36",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_36_7de3cc0"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_37",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_37",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_37_7de3cc5"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_38",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_38",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_38_7de3ccb"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_39",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_39",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_39_7de3ccf"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_40",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_40",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_40_7de3cd4"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_43",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_43",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_43_7de3cda"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_45",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_45",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_45_7de3cdf"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_46",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_46",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_46_7de3ce5"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_47",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_47",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_47_7de3ceb"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_48",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_48",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_48_7de3cf0"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_49",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_49",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_49_7de3cf5"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_5",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_5",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_5_7de3cfa"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_51",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_51",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_51_7de3cfe"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_52",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_52",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_52_7de3d03"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_53",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_53",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_53_7de3d08"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_55",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_55",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_55_7de3d0c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_56",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_56",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_56_7de3d11"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_57",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_57",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_57_7de3d15"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_58",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_58",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_58_7de3d1c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_59",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_59",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_59_7de3d21"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_60",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_60",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_60_7de3d26"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_61",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_61",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_61_7de3d2b"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_62",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_62",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_62_7de3d30"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_65",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_65",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_65_7de3d35"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_67",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_67",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_67_7de3d3a"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_68",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_68",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_68_7de3d3f"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_69",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_69",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_69_7de3d44"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_7",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_7",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_7_7de3d48"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_70",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_70",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_70_7de3d4d"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_71",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_71",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_71_7de3d51"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_72",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_72",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_72_7de3d56"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_73",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_73",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_73_7de3d5b"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_74",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_74",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_74_7de3d60"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_75",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_75",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_75_7de3d64"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_76",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_76",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_76_7de3d69"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_79",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_79",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_79_7de3d6e"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_8",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_8",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_8_7de3d72"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_80",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_80",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_80_7de3d77"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_81",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_81",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_81_7de3d7c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_82",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_82",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_82_7de3d81"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_83",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_83",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_83_7de3d86"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_84",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_84",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_84_7de3d8b"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_85",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_85",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_85_7de3d90"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_86",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_86",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_86_7de3d95"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_87",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_87",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_87_7de3d99"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_89",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_89",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_89_7de3d9e"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_9",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_9",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_9_7de3da3"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_90",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_90",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_90_7de3da9"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_91",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_91",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_91_7de3daf"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_93",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_93",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_93_7de3db5"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_94",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_94",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_94_7de3db9"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_95",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_95",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_95_7de3dbe"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_96",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_96",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_96_7de3dc3"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_97",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_97",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_97_7de3dc7"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_98",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_98",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_98_7de3dce"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_120",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_120",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_120_7de3dd3"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_121",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_121",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_121_7de3dd8"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_123",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_123",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_123_7de3ddd"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_124",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_124",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_124_7de3de2"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_125",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_125",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_125_7de3de7"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_126",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_126",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_126_7de3dec"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_127",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_127",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_127_7de3df1"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_128",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_128",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_128_7de3df5"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_129",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_129",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_129_7de3dfa"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_130",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_130",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_130_7de3dfe"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_132",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_132",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_132_7de3e03"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_133",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_133",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_133_7de3e08"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_134",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_134",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_134_7de3e0d"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_135",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_135",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_135_7de3e12"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_136",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_136",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_136_7de3e16"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_137",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_137",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_137_7de3e1b"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_138",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_138",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_138_7de3e22"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_139",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_139",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_139_7de3e26"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_140",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_140",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_140_7de3e2c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_141",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_141",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_141_7de3e31"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_142",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_142",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_142_7de3e35"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_143",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_143",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_143_7de3e3b"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_144",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_144",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_144_7de3e40"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_146",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_146",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_146_7de3e44"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_147",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_147",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_147_7de3e49"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_148",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_148",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_148_7de3e4e"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_149",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_149",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_149_7de3e53"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_151",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_151",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_151_7de3e58"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_152",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_152",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_152_7de3e5c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_153",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_153",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_153_7de3e62"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_154",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_154",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_154_7de3e67"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_155",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_155",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_155_7de3e6c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_156",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_156",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_156_7de3e71"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_158",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_158",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_158_7de3e77"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_159",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_159",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_159_7de3e7d"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_160",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_160",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_160_7de3e84"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_161",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_161",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_161_7de3e88"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_163",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_163",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_163_7de3e8d"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_164",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_164",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_164_7de3e92"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_165",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_165",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_165_7de3e98"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_166",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_166",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_166_7de3e9e"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_167",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_167",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_167_7de3ea3"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_168",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_168",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_168_7de3ea8"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_169",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_169",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_169_7de3ead"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_170",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_170",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_170_7de3eb1"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_171",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_171",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_171_7de3eb6"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_173",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_173",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_173_7de3ebb"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_174",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_174",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_174_7de3ec0"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_175",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_175",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_175_7de3ec5"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_176",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_176",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_176_7de3ec9"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_178",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_178",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_178_7de3ecf"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_179",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_179",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_179_7de3ed4"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_180",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_180",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_180_7de3ed9"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_181",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_181",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_181_7de3edd"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_182",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_182",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_182_7de3ee2"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_183",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_183",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_183_7de3ee7"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_184",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_184",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_184_7de3eeb"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_185",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_185",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_185_7de3ef0"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_186",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_186",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_186_7de3ef5"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_187",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_187",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_187_7de3efa"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_188",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_188",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_188_7de3eff"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_189",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_189",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_189_7de3f03"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_190",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_190",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_190_7de3f08"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_191",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_191",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_191_7de3f0c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_193",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_193",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_193_7de3f13"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_194",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_194",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_194_7de3f18"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_195",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_195",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_195_7de3f1d"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_196",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_196",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_196_7de3f22"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_197",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_197",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_197_7de3f27"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_198",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_198",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_198_7de3f2c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_199",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_199",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_199_7de3f31"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_200",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_200",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_200_7de3f37"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_201",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_201",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_201_7de3f3b"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_202",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_202",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_202_7de3f40"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_203",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_203",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_203_7de3f45"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_204",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_204",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_204_7de3f4a"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_206",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_206",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_206_7de3f4f"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_207",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_207",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_207_7de3f53"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_208",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_208",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_208_7de3f58"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_209",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_209",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_209_7de3f5c"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_210",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_210",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_210_7de3f65"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_211",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_211",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_211_7de3f6a"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_212",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_212",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_212_7de3f6f"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_213",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_213",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_213_7de3f74"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_214",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_214",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_214_7de3f79"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_215",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_215",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_215_7de3f80"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_216",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_216",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_216_7de3f85"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_218",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_218",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_218_7de3f89"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_219",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_219",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_219_7de3f90"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_220",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_220",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_220_7de3f95"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_223",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_223",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_223_7de3f99"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_225",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_225",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_225_7de3f9e"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_226",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_226",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_226_7de3fa2"
+ },
+ {
+  "cromwell-batch-label": "odis_fastq_to_gvcf_take3",
+  "cromwell-sample-label": "sample_227",
+  "cromwell-batch-sample-label": "odis_fastq_to_gvcf_take3_sample_227",
+  "cromwell-batch-status": "include",
+  "cromwell-unique-label": "fastq_to_gvcf_wf_odis_fastq_to_gvcf_take3_sample_227_7de3fa7"
+ }
+]
