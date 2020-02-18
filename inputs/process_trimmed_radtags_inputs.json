@@ -1,0 +1,12 @@
+[{
+  "process_radtags_wf.batch_ids": ["plate_1", "plate_2"],
+  "process_radtags_wf.fastqs": ["s3://cromwell-output/cromwell-execution/combined_reads_qc_wf/38a4aea6-3020-4803-858f-8b62423f7bb5/call-trim/shard-0/ODIS_1_NoIndex_L001_R1_001.trimmed.fastq.gz",
+                                      "s3://cromwell-output/cromwell-execution/combined_reads_qc_wf/38a4aea6-3020-4803-858f-8b62423f7bb5/call-trim/shard-1/ODIS_2_NoIndex_L002_R1_001.trimmed.fastq.gz"],
+  "process_radtags_wf.barcode_files": ["s3://odis-analysis/ddrad_data/raw_reads/stacks_barcodes_plate1.final.tsv",
+                                             "s3://odis-analysis/ddrad_data/raw_reads/stacks_barcodes_plate2.final.tsv"],
+  "process_radtags_wf.enzyme_1": "mseI",
+  "process_radtags_wf.adapter_seq": "AGATCGGAAGAGCTCGTATGCCGTCTTCTGCTTG",
+  "process_radtags_wf.adapter_mismatches": "2",
+  "process_radtags_wf.min_len": "50",
+  "process_radtags_wf.disable_rad_check": true
+}]
