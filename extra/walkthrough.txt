@@ -433,22 +433,57 @@ vcftools --vcf /data/odis_ddrad.merged.het_filtered.vcf \
 --min-alleles 2 \
 --remove-filtered-all
 
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp2.recode.vcf \
+--missing-indv \
+--out /data/vcf/odis_ddrad.merged.het_filtered.missing
+
+awk -F '\t' '$5 > 0.6 {print $1}'  ~/Desktop/projects/odis/ddrad/vcf/odis_ddrad.merged.het_filtered.missing.imiss | tail -n +2 > samples_gt_0.6_missinig.txt
+
 docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/vcf/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
 vcftools --vcf /data/odis_ddrad.merged.het_filtered.vcf \
 --recode \
---out /data/odis_ddrad.merged.het_filtered.hard_filtered \
+--out /data/odis_ddrad.merged.het_filtered.hard_filtered.dp5 \
 --remove-indels \
 --maf 0.01 \
+--remove /data/samples_gt_0.6_missinig.txt \
 --max-missing 0.5 \
 --minDP 5 \
 --max-alleles 2 \
 --min-alleles 2 \
 --remove-filtered-all
 
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/vcf/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/odis_ddrad.merged.het_filtered.hard_filtered.dp3 \
+--remove-indels \
+--maf 0.01 \
+--remove /data/samples_gt_0.6_missinig.txt \
+--max-missing 0.5 \
+--minDP 3 \
+--max-alleles 2 \
+--min-alleles 2 \
+--remove-filtered-all
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/vcf/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/odis_ddrad.merged.het_filtered.hard_filtered.dp2 \
+--remove-indels \
+--maf 0.01 \
+--remove /data/samples_gt_0.6_missinig.txt \
+--max-missing 0.5 \
+--minDP 2 \
+--max-alleles 2 \
+--min-alleles 2 \
+--remove-filtered-all
+
+
 docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
 vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp3.recode.vcf \
 --recode \
---out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.arthropod \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.arthropod_dp3 \
 --bed /data/contam_filtering/bed/arthropod_pos.bed
 
 docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
@@ -458,9 +493,7 @@ vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp2.recode
 --bed /data/contam_filtering/bed/arthropod_pos.bed
 
 docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
-vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp2.recode.vcf \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp5.recode.vcf \
 --recode \
---out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.eukaryote_dp5 \
---bed /data/contam_filtering/bed/eukaryote_pos.bed \
---minDP 5 
---max-missing
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.arthropod_dp5 \
+--bed /data/contam_filtering/bed/arthropod_pos.bed
