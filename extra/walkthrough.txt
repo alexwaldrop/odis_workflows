@@ -1,0 +1,466 @@
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/workflow/test_rnaseq_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/test/rnaseq_pe_wf/test_rnaseq_pe_wf.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/var/rnaseq-pipeline.zip
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/workflow/rnaseq_pe_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/test/rnaseq_pe_wf/test_rnaseq_pe_wf.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/var/rnaseq-pipeline.zip
+c9871cb1-3373-471d-9ebe-b647003ce561
+11bbaabb-7020-4640-bee2-a8236b41ddcb
+835cc88b-05d1-4107-af1b-e1e1350f7bb9
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/workflow/collect_rnaseq_qc_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/test/collect_rnaseq_qc_wf/collect_rnaseq_qc_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/var/rnaseq-pipeline.zip
+20a6c74a-708d-47a0-a184-11567bd96d5e
+a141b0b7-ae9d-4deb-a59e-b68ebf8b0384
+78f2ab30-4853-4c13-a724-ad3267feb94e
+166ce973-e52b-4297-bacb-aae2d5cd3e71
+58f9f00e-1326-46ac-ac69-b0f47e3a6fe0
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/workflow/collect_rnaseq_qc_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/test/collect_rnaseq_qc_wf/collect_rnaseq_qc_inputs_2.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/rnaseq-pipeline/var/rnaseq-pipeline.zip
+8db45e35-84c6-4420-a2c4-609b85119d2d
+60203202-e8b4-4e4b-947e-2f4881576b1a
+382c220f-72af-4231-918c-1008f33f80f8
+28032499-c445-4a24-a215-f36f0801cd2e
+125dd57a-2172-4559-b3e7-fae316e4a909
+
+
+UPDATE DATABASECHANGELOGLOCK SET LOCKED=FALSE, LOCKGRANTED=null, LOCKEDBY=null where ID=1;
+
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/combined_reads_fastqc_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/combined_reads_fastqc_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/build_references_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/build_references_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+c22469e1-ddb5-4850-a8aa-baa98aaf02ac
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/fastq_head_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/fastq_head_inputs.json
+
+
+
+docker run -it -v "/Users/awaldrop/Downloads/:/data/" alexwaldrop/stacks:2.5 process_radtags \
+-f /data/ODIS_1_NoIndex_L001_R1_001.head.fastq \
+-b /data/stacks_barcodes_plate1.final.tsv \
+-o /data/stacks_output/ \
+--inline-null \
+--clean \
+--rescue \
+--quality \
+--adapter-1 "CAAGCAGAAGACGGCATACGAGCTCTTCCGATCT" \
+--adapter-mm 2 \
+--renz-1 mseI \
+--renz-2 ecoRI \
+-E phred33 \
+-w 0.15 \
+-s 10 \
+-D \
+--filter-illumina \
+--len-limit 35 \
+--barcode-dist-1 1 \
+--barcode-dist-2 2 \
+--retain-header
+
+
+docker run -it -v "/Users/awaldrop/Downloads/:/data/" alexwaldrop/stacks:2.5 process_radtags \
+-f /data/ODIS_1_NoIndex_L001_R1_001.head.fastq \
+-b /data/stacks_barcodes_plate1.final.tsv \
+-o /data/stacks_output/ \
+--inline-null \
+--clean \
+--rescue \
+--quality \
+--adapter-1 "AGATCGGAAGAGCTCGTATGCCGTCTTCTGCTTG" \
+--adapter-mm 2 \
+--renz-1 mseI \
+--renz-2 ecoRI \
+-E phred33 \
+-w 0.15 \
+-s 10 \
+-D \
+--filter-illumina \
+--len-limit 35 \
+--barcode-dist-1 1 \
+--barcode-dist-2 2 \
+--retain-header
+
+
+docker run -it -v "/Users/awaldrop/Downloads/:/data/" alexwaldrop/stacks:2.5 process_radtags \
+-f /data/ODIS_1_NoIndex_L001_R1_001.head.fastq \
+-b /data/stacks_barcodes_plate1.final.tsv \
+-o /data/stacks_output/ \
+--inline-null \
+--clean \
+--rescue \
+--quality \
+--adapter-1 "AGATCGGAAGAGCTCGTATGCCGTCTTCTGCTTG" \
+--adapter-mm 2 \
+--renz-1 mseI \
+--renz-2 ecoRI \
+-E phred33 \
+-w 0.15 \
+-s 10 \
+-D \
+--filter-illumina \
+--len-limit 35 \
+--barcode-dist-1 1 \
+--barcode-dist-2 2 \
+--retain-header \
+--disable-rad-check \
+--barcode-dist-1 2
+
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/process_radtags_batch_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/process_radtags_plate1_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+80f8caf8-c70c-41f0-81f6-6e1f9994464e
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/process_radtags_batch_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/process_radtags_plate2_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+678b1ccc-b84f-4c24-8ea1-219ec53b2965
+
+
+
+
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/PycharmProjects/odis_workflows/inputs/process_radtags_inputs.json \
+--labels ~/PycharmProjects/odis_workflows/inputs/process_radtags_labels.json \
+--wdl ~/PycharmProjects/odis_workflows/process_radtags_batch_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/process_radtags/submissions/ \
+--batch-conflict-action rerun-all \
+--cromwell-url 127.0.0.1:8000 -vv
+
+~/PycharmProjects/wdl_input_tools/get_batch_status.py \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/process_radtags/status_checks/ \
+--batch odis_process_radtags \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+~/PycharmProjects/wdl_input_tools/abort_batch.py \
+--batch odis_process_radtags \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/fastq_to_gvcf_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/test_gvcf.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+
+~/PycharmProjects/wdl_input_tools/init_sample_sheet.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/fastq_to_gvcf_batch1_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf/fastq_to_gvcf_sample_sheet_plate1.xlsx \
+--cromwell-url 127.0.0.1:8000 -vv
+
+~/PycharmProjects/wdl_input_tools/init_sample_sheet.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/fastq_to_gvcf_batch2_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf/fastq_to_gvcf_sample_sheet_plate2.xlsx \
+--cromwell-url 127.0.0.1:8000 -vv
+
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/PycharmProjects/odis_workflows/inputs/test_gvcf_batch.json \
+--labels ~/PycharmProjects/odis_workflows/inputs/test_gvcf_batch.labels.json \
+--wdl ~/PycharmProjects/odis_workflows/fastq_to_gvcf_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf/submissions/ \
+--batch-conflict-action rerun-unless-success \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+
+
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf/odis_fastq_to_gvcf.inputs.json \
+--labels ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf/odis_fastq_to_gvcf.labels.json \
+--wdl ~/PycharmProjects/odis_workflows/fastq_to_gvcf_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf/submissions/ \
+--batch-conflict-action rerun-unless-success \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+~/PycharmProjects/wdl_input_tools/init_sample_sheet.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/genotype_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs/genotype_gvcf_sample_sheet.xlsx \
+--populate-from-batch odis_fastq_to_gvcf \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+~/PycharmProjects/wdl_input_tools/make_batch_inputs.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/genotype_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs/genotype_gvcf_sample_sheet.xlsx \
+--batch-name odis_genotype_gvcfs \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs/ \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+
+
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/genotype_gvcfs_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs/test_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+
+
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs/odis_genotype_gvcfs.inputs.json \
+--labels ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs/odis_genotype_gvcfs.labels.json \
+--wdl ~/PycharmProjects/odis_workflows/genotype_gvcfs_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs/submissions/ \
+--batch-conflict-action rerun-unless-success \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+######## RERUN
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/build_references_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/build_references_otau_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+
+# Run process radtags
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/process_radtags_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/process_radtags_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+0aca3bc8-eacd-453d-be7e-735576828fa3
+
+# Get demux fastq paths and sample names for plate 1
+aws s3 ls s3://cromwell-output/cromwell-execution/process_radtags_wf/0aca3bc8-eacd-453d-be7e-735576828fa3/call-process_radtags/shard-0/glob-6e320fda90eb1d50aa86841083784427/ | rev | cut -d" " -f 1 | rev
+aws s3 ls s3://cromwell-output/cromwell-execution/process_radtags_wf/0aca3bc8-eacd-453d-be7e-735576828fa3/call-process_radtags/shard-0/glob-6e320fda90eb1d50aa86841083784427/ | rev | cut -d" " -f 1 | rev | cut -d"." -f 1
+
+# Get demux fastq paths and sample names for plate 2
+aws s3 ls s3://cromwell-output/cromwell-execution/process_radtags_wf/0aca3bc8-eacd-453d-be7e-735576828fa3/call-process_radtags/shard-1/glob-6e320fda90eb1d50aa86841083784427/ | rev | cut -d" " -f 1 | rev
+aws s3 ls s3://cromwell-output/cromwell-execution/process_radtags_wf/0aca3bc8-eacd-453d-be7e-735576828fa3/call-process_radtags/shard-1/glob-6e320fda90eb1d50aa86841083784427/ | rev | cut -d" " -f 1 | rev | cut -d"." -f 1
+
+# Make batch inputs
+~/PycharmProjects/wdl_input_tools/make_batch_inputs.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/fastq_to_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_good/fastq_to_gvcf_sample_sheet.xlsx \
+--batch-name odis_fastq_to_gvcf_good \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_good/ \
+--cromwell-url 127.0.0.1:8000 -vv
+
+# Submit batch
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_good/odis_fastq_to_gvcf_good.inputs.json \
+--labels ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_good/odis_fastq_to_gvcf_good.labels.json \
+--wdl ~/PycharmProjects/odis_workflows/fastq_to_gvcf_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_good/submissions/ \
+--batch-conflict-action rerun-failed \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+~/PycharmProjects/wdl_input_tools/init_sample_sheet.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/genotype_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_good/genotype_gvcf_sample_sheet.xlsx \
+--populate-from-batch odis_fastq_to_gvcf_good \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+~/PycharmProjects/wdl_input_tools/make_batch_inputs.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/genotype_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_good/genotype_gvcf_sample_sheet.xlsx \
+--batch-name odis_genotype_gvcfs_good \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_good/ \
+--cromwell-url 127.0.0.1:8000 -vv
+
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_good/odis_genotype_gvcfs_good.inputs.json \
+--labels ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_good/odis_genotype_gvcfs_good.labels.json \
+--wdl ~/PycharmProjects/odis_workflows/genotype_gvcfs_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_good/submissions/ \
+--batch-conflict-action rerun-unless-success \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+
+
+
+# Get merged VCF of raw SNPs
+/Users/awaldrop/Desktop/projects/odis/ddrad/odis_ddrad.merged.vcf
+Total SNPs
+	587,331
+
+
+
+
+# Run GATK to filter excess heterozygotes
+docker run -it -v"/Users/awaldrop/Desktop/projects/odis/ddrad/:/data/" broadinstitute/gatk:4.1.4.0 \
+gatk VariantFiltration \
+--filter-expression "InbreedingCoeff > 0.7" \
+--filter-name ExcessHet \
+-O /data/odis_ddrad.merged.het_filtered.vcf \
+-V /data/odis_ddrad.merged.vcf
+
+Total SNPs after filter:
+	587,326 (5 with excess het)
+
+
+
+# Run VCF tools to filter SNPs
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/odis_ddrad.merged.het_filtered.snps_only.max_missing50.maf_gt_0.01.min_dp_5 \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--minDP 5 \
+--max-alleles 2 \
+--min-alleles 2 
+
+
+# Turn SILVA database into a fasta
+~/PycharmProjects/odis_workflows/docker/clean_fasta/clean_fasta.py \
+-f ~/Desktop/projects/odis/data/new_tax_silva_132/Silva.nr_132/silva.nr_v132.align \
+-o ~/Desktop/projects/odis/data/new_tax_silva_132/Silva.nr_132/silva.nr_v132.cleaned.fasta
+
+# Run classify seqs
+classify.seqs(fasta=/Users/awaldrop/Desktop/projects/odis/data/otu_data/nosingle.otus.fasta, template=/Users/awaldrop/Desktop/projects/odis/data/new_tax_silva_132/Silva.nr_v132/silva.nr_v132.cleaned.fasta, taxonomy=/Users/awaldrop/Desktop/projects/odis/data/new_tax_silva_132/Silva.nr_v132/silva.nr_v132.tax, cutoff=80)
+
+# Convert tax table to CSV for phyloseq
+cat  nosingle.otus.nr_v132.wang.taxonomy | tr ";" "," | tr "\t" "," | sed 's/([0-9]*)//g' | sed 's/.$//' > nosingle.otus.nr_v132.wang.taxonomy.csv
+
+
+
+
+
+
+
+~/PycharmProjects/wdl_input_tools/make_batch_inputs.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/stacks_denovo_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/stacks_denovo/stacks_denovo_sample_sheet.xlsx \
+--batch-name stacks_denovo \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/stacks_denovo/ \
+--cromwell-url 127.0.0.1:8000 -vv
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/stacks_denovo_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/Desktop/projects/odis/pipeline_meta_info/stacks_denovo/stacks_denovo.inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/combined_reads_qc_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/combined_reads_qc_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+
+curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" \
+-F "workflowSource=@/Users/awaldrop/PycharmProjects/odis_workflows/process_radtags_wf.wdl" \
+-F "workflowInputs=@/Users/awaldrop/PycharmProjects/odis_workflows/inputs/process_trimmed_radtags_inputs.json" \
+-F "workflowDependencies"=@/Users/awaldrop/PycharmProjects/odis_workflows/var/odis_workflows.zip
+
+aws s3 ls s3://cromwell-output/cromwell-execution/process_radtags_wf/8953cc66-3659-4273-a027-2cc51730ae6a/call-process_radtags/shard-0/glob-6e320fda90eb1d50aa86841083784427/ | rev | cut -d" " -f 1 | rev
+
+~/PycharmProjects/wdl_input_tools/make_batch_inputs.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/fastq_to_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_take3/fastq_to_gvcf_sample_sheet.xlsx \
+--batch-name odis_fastq_to_gvcf_take3 \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_take3/ \
+--cromwell-url 127.0.0.1:8000 -vv
+
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_take3/odis_fastq_to_gvcf_take3.inputs.json \
+--labels ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_take3/odis_fastq_to_gvcf_take3.labels.json \
+--wdl ~/PycharmProjects/odis_workflows/fastq_to_gvcf_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/fastq_to_gvcf_take3/submissions/ \
+--batch-conflict-action rerun-failed \
+--cromwell-url 127.0.0.1:8000 -vv
+
+
+~/PycharmProjects/wdl_input_tools/init_sample_sheet.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/genotype_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_take3/genotype_gvcf_sample_sheet.xlsx \
+--populate-from-batch odis_fastq_to_gvcf_take3 \
+--cromwell-url 127.0.0.1:8000 -vv
+
+~/PycharmProjects/wdl_input_tools/make_batch_inputs.py \
+--batch-config ~/PycharmProjects/odis_workflows/cromwell_batch_configs/genotype_gvcf_batch_config.yaml \
+--sample-sheet ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_take3/genotype_gvcf_sample_sheet.xlsx \
+--batch-name odis_genotype_gvcfs_take3 \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_take3/ \
+--cromwell-url 127.0.0.1:8000 -vv
+
+~/PycharmProjects/wdl_input_tools/submit_batch.py \
+--inputs ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_take3/odis_genotype_gvcfs_take3.inputs.json \
+--labels ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_take3/odis_genotype_gvcfs_take3.labels.json \
+--wdl ~/PycharmProjects/odis_workflows/genotype_gvcfs_wf.wdl \
+--imports ~/PycharmProjects/odis_workflows/var/odis_workflows.zip \
+--output-dir ~/Desktop/projects/odis/pipeline_meta_info/genotype_gvcfs_take3/submissions/ \
+--batch-conflict-action rerun-failed \
+--cromwell-url 127.0.0.1:8000 -vv
+
+docker run -it -v"/Users/awaldrop/Desktop/projects/odis/ddrad/vcf/:/data/" broadinstitute/gatk:4.1.4.0 \
+gatk VariantFiltration \
+--filter-expression "InbreedingCoeff > 0.7" \
+--filter-name ExcessHet \
+-O /data/odis_ddrad.merged.het_filtered.vcf \
+-V /data/odis_ddrad.merged.vcf
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/vcf/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/odis_ddrad.merged.het_filtered.hard_filtered \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--minDP 3 \
+--max-alleles 2 \
+--min-alleles 2 \
+--remove-filtered-all
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/vcf/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/odis_ddrad.merged.het_filtered.hard_filtered \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--minDP 5 \
+--max-alleles 2 \
+--min-alleles 2 \
+--remove-filtered-all
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp3.recode.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.arthropod \
+--bed /data/contam_filtering/bed/arthropod_pos.bed
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp2.recode.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.arthropod_dp2 \
+--bed /data/contam_filtering/bed/arthropod_pos.bed
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.dp2.recode.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.eukaryote_dp5 \
+--bed /data/contam_filtering/bed/eukaryote_pos.bed \
+--minDP 5 
+--max-missing

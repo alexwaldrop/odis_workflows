@@ -1,0 +1,122 @@
+# CAT config classification
+	sudo yum install docker
+	sudo service docker start
+	
+	aws configure
+	aws s3 cp s3://odis-analysis/ddrad_data/assembly/genome.ctg.fasta .
+	sudo docker pull alexwaldrop/cat:v5.0.3 CAT
+	
+	# Download CAT pre-formatted reference
+	nohup wget tbb.bio.uu.nl/bastiaan/CAT_prepare/CAT_prepare_20190719.tar.gz &
+	pigz -dc CAT_prepare_20190719.tar.gz | tar xf -
+	
+sudo docker run -it -v "/home/ec2-user/:/data/" alexwaldrop/cat:v5.0.3 CAT contigs \
+-c /data/genome.ctg.fasta \
+-d /data/CAT_prepare_20190719/2019-07-19_CAT_database/ \
+-t /data/CAT_prepare_20190719/2019-07-19_taxonomy/ \
+-n 36 \
+-o /data/odis_ref_CAT_run \
+-p /data/odis_ref_CAT_run.predicted_proteins.faa \
+--top 11 \
+--I_know_what_Im_doing
+
+sudo docker run -it -v "/home/ec2-user/:/data/" alexwaldrop/cat:v5.0.3 CAT add_names \
+-i /data/odis_ref_CAT_run.contig2classification.txt \
+-t /data/CAT_prepare_20190719/2019-07-19_taxonomy/ \
+-o /data/odis_ref_CAT_run.contig2classification.official_names.txt \
+--only_official
+
+
+sudo docker run -it -v "/home/ec2-user/:/data/" alexwaldrop/cat:v5.0.3 CAT summarise \
+-c /data/genome.ctg.fasta \
+-i /data/odis_ref_CAT_run.contig2classification.official_names.txt \
+-o /data/odis_ref_CAT_run.summary.txt 
+
+# Getting contigs from each group
+	# Bacterial contigs
+	grep Bacteria odis_ref_CAT_run.contig2classification.official_names.txt | cut -f 1 > bacteria_contigs.txt
+	
+	# Eukaryote contigs
+	grep Eukaryota odis_ref_CAT_run.contig2classification.official_names.txt | cut -f 1 > eukaryota_contigs.txt
+	
+	# Arthropoda contigs
+	grep Arthropoda odis_ref_CAT_run.contig2classification.official_names.txt | cut -f 1 > arthropod_contigs.txt
+	
+	# Insect contigs
+	grep Insecta odis_ref_CAT_run.contig2classification.official_names.txt | cut -f 1 > insect_contigs.txt
+	
+	# Eukaryote and unclassified
+	grep "unclassified\|Eukaryota"  CAT_results/odis_ref_CAT_run.contig2classification.official_names.txt | cut -f 1 > eukaryota_and_unclassified_contigs.txt
+
+# Get subset bed files for each using the liftover file
+	# Bacterial bed
+		awk -F '\t' 'FNR==1; NR==FNR {id[$1]; next} $4 in id' bacteria_contigs.txt odis.draft_assembly.v1.35ctg.liftover.bed | cut -f 1,2,3 | tail -n +2 > bacterial_pos.bed
+	# Eukaryote bed
+		awk -F '\t' 'FNR==1; NR==FNR {id[$1]; next} $4 in id' ../CAT_results/ar ../assembly/odis.draft_assembly.v1.35ctg.liftover.bed | cut -f 1,2,3 | tail -n +2 > eukaryote_pos.bed
+	# Arthropod bed
+		awk -F '\t' 'FNR==1; NR==FNR {id[$1]; next} $4 in id' ../CAT_results/arthropod_contigs.txt ../assembly/odis.draft_assembly.v1.35ctg.liftover.bed | cut -f 1,2,3 | tail -n +2 > arthropod_pos.bed
+	# Insect bed
+		awk -F '\t' 'FNR==1; NR==FNR {id[$1]; next} $4 in id' ../CAT_results/insect_contigs.txt ../assembly/odis.draft_assembly.v1.35ctg.liftover.bed | cut -f 1,2,3 | tail -n +2 > insect_pos.bed
+	# Eukaryotes and unclassified
+		awk -F '\t' 'FNR==1; NR==FNR {id[$1]; next} $4 in id' ./CAT_results/eukaryote_and_unclassified_contigs.txt ./assembly/odis.draft_assembly.v1.35ctg.liftover.bed | cut -f 1,2,3 | tail -n +2 > insect_pos.bed
+
+# Get subset VCF files
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.bacteria \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--max-alleles 2 \
+--min-alleles 2 \
+--minDP 2 \
+--bed /data/contam_filtering/bed/bacteria_pos.bed
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.eukaryote \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--max-alleles 2 \
+--min-alleles 2 \
+--bed /data/contam_filtering/bed/eukaryote_pos.bed
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.arthropod \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--max-alleles 2 \
+--min-alleles 2 \
+--bed /data/contam_filtering/bed/arthropod_pos.bed
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.insect \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--max-alleles 2 \
+--min-alleles 2 \
+--bed /data/contam_filtering/bed/insect_pos.bed
+
+docker run -it -v "/Users/awaldrop/Desktop/projects/odis/ddrad/:/data" biocontainers/vcftools:v0.1.16-1-deb_cv1 \
+vcftools --vcf /data/vcf/odis_ddrad.merged.het_filtered.vcf \
+--recode \
+--out /data/vcf/odis_ddrad.merged.het_filtered.hard_filtered.insect \
+--remove-indels \
+--maf 0.01 \
+--max-missing 0.5 \
+--max-alleles 2 \
+--min-alleles 2 \
+--bed /data/contam_filtering/bed/insect_pos.bed
+	
+	
+	
+	
